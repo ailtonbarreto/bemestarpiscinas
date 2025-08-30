@@ -66,6 +66,16 @@ body{
     border-radius: var(--border-radius);
     color: var(--text-color);
     min-height: 30vh;
+
+    table{
+        width: 100%;
+        text-align: center;
+        padding-top: 1vw;
+
+        th{
+            padding-bottom: 0.5vw;
+        }
+    }
 }
 
 footer{
