@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #25BDD8;
+    --bg-color: #ffffff;
+    --text-color: #ffffff;
+    --border-radius: 1vw;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    gap: 5vw;
+}
+
+.user{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.atendimentos{
+    background-color: var(--primary-color);
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vw;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+
+    .placar{
+        margin-top: 2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.calendario{
+    margin-top: 7vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.tabela_atendimento{
+    background-color: var(--primary-color);
+    width: 90vw;
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    min-height: 30vh;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    padding: 1vw 10vw;
+
+    .material-symbols-outlined{
+        font-size: 8vw;
+    }
+}
