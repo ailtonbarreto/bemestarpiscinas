@@ -75,6 +75,10 @@ body{
         th{
             padding-bottom: 0.5vw;
         }
+
+        td{
+            cursor: pointer;
+        }
     }
 }
 
@@ -90,5 +94,6 @@ footer{
 
     .material-symbols-outlined{
         font-size: 8vw;
+        cursor: pointer;
     }
 }

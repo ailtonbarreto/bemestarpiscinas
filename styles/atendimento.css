@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #25BDD8;
+    --container-color: #D3F8FF;
+    --bg-color: #ffffff;
+    --h2-color: #1282C8;
+    --btn-concluir: #25D890;
+    --text-color: #ffffff;
+    --border-radius: 1vw;
+}
+
+body {
+    height: 100vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    gap: 5vw;
+    padding-bottom: 480vw;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--h2-color);
+}
+
+
+.container {
+    background-color: var(--container-color);
+    width: 90vw;
+    text-align: center;
+    border-radius: 0.5vw;
+    padding: 5vw 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+
+    select {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        width: 90%;
+        padding: 2vw;
+        border: none;
+        border-radius: 1vw;
+        font-size: 4vw;
+
+        option{
+            border: none;
+            font-size: 4vw;
+        }
+    }
+
+}
+
+.concluir{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.observacao{
+    min-height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input{
+        min-height: 25vw;
+        border: none;
+        width: 95%;
+        display: flex;
+        text-align: left;
+        align-items: flex-start;
+        outline: none;
+
+    }
+}
+
+#btn_concluir{
+    background-color: var(--btn-concluir);
+    color: var(--text-color);
+    font-size: 4vw;
+    border: none;
+    padding: 1vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+    background: var(--h2-color);
+    color: white;
+    border: none;
+    padding: 2vw;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: var(--btn-concluir);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    padding: 1vw 10vw;
+
+    .material-symbols-outlined {
+        font-size: 8vw;
+        cursor: pointer;
+    }
+}
