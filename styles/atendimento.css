@@ -92,8 +92,9 @@ h3 {
     background-color: var(--btn-concluir);
     color: var(--text-color);
     font-size: 4vw;
+    width: 90vw;
     border: none;
-    padding: 1vw;
+    padding: 2vw ;
     border-radius: 1vw;
     cursor: pointer;
 }
