@@ -6,10 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atendimento</title>
     <link rel="stylesheet" href="../styles/atendimento.css">
+    <link rel="stylesheet" href="../styles/popup.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 
+<script>
+
+    function Show_popup() {
+
+        let popup = document.getElementById('popup');
+
+        popup.style.display = 'flex';
+
+    }
+
+    function Hide_popup() {
+
+        let popup = document.getElementById('popup');
+
+        popup.style.display = 'none';
+
+    }
+
+</script>
+
 <body>
+
+    <div id="popup">
+
+        <span class="material-symbols-outlined">check</span>
+
+        <button onclick="Hide_popup()">OK</button>
+
+
+    </div>
 
     <h1>Cliente A</h1>
 
@@ -203,7 +233,7 @@
 
     <div class="concluir">
 
-        <button id="btn_concluir">Concluir</button>
+        <button id="btn_concluir" onclick="Show_popup()">Concluir</button>
 
     </div>
 

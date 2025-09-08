@@ -74,17 +74,19 @@ h3 {
     min-height: 30vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+
 
     input{
-        min-height: 25vw;
         border: none;
         width: 95%;
-        display: flex;
-        text-align: left;
-        align-items: flex-start;
+        position: relative;
+        top: 0;
+        font-size: 2vh;
+        line-height: 1vw;
         outline: none;
-
+        color: var(--h2-color);
+        background-color: transparent;
     }
 }
 
@@ -112,6 +114,9 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:hover {
     background: var(--btn-concluir);
 }
+
+
+
 
 footer {
     background-color: var(--primary-color);
