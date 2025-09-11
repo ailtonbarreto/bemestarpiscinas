@@ -7,8 +7,8 @@
 }
 
 :root{
-    --primary-color: #25BDD8;
-    --bg-color: #ffffff;
+    --primary-color: #3784B4;
+    --bg-color: #000000;
     --text-color: #ffffff;
     --border-radius: 1vw;
 }
@@ -21,6 +21,7 @@ body{
     align-items: center;
     font-family: 'poppins', sans-serif;
     gap: 5vw;
+    background-color: var(--bg-color);
 }
 
 .user{
@@ -29,7 +30,7 @@ body{
     flex-direction: column;
     gap: 2vw;
     align-items: center;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .atendimentos{
@@ -57,7 +58,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 .tabela_atendimento{
@@ -95,5 +96,6 @@ footer{
     .material-symbols-outlined{
         font-size: 8vw;
         cursor: pointer;
+        color: var(--text-color);
     }
 }

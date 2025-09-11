@@ -7,16 +7,17 @@
 }
 
 :root {
-    --primary-color: #25BDD8;
-    --container-color: #D3F8FF;
-    --bg-color: #ffffff;
-    --h2-color: #1282C8;
-    --btn-concluir: #25D890;
+    --primary-color: #3784B4;
+    --container-color: #1B5173;
+    --bg-color: #000000;
+    --h2-color: #ffffff;
+    --btn-concluir: #00975b;
     --text-color: #ffffff;
     --border-radius: 1vw;
 }
 
 body {
+    background-color: var(--bg-color);
     height: 100vh;
     margin-top: 5vh;
     display: flex;
@@ -103,7 +104,7 @@ h3 {
 
 input[type="file"]::file-selector-button {
     background: var(--h2-color);
-    color: white;
+    color: var(--container-color);
     border: none;
     padding: 2vw;
     border-radius: 6px;
@@ -113,6 +114,7 @@ input[type="file"]::file-selector-button {
 
 input[type="file"]::file-selector-button:hover {
     background: var(--btn-concluir);
+    color: var(--text-color);
 }
 
 
@@ -131,5 +133,6 @@ footer {
     .material-symbols-outlined {
         font-size: 8vw;
         cursor: pointer;
+        color: var(--text-color);
     }
 }

@@ -9,7 +9,7 @@
 
 :root{
     --primary-color: #25BDD8;
-    --bg-color: #ffffff;
+    --bg-color: #000000;
     --text-color: #ffffff;
 }
 
@@ -24,7 +24,8 @@ body{
 }
 
 img{
-    margin: 4vh;
+    margin: 3vh;
+    width: 50vw;
 }
 
 .container{
