@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary-color: #3784B4;
     --bg-color: #000000;
     --text-color: #ffffff;
+    --color-ok: rgb(10, 231, 10);
+    --color-not_ok: rgb(247, 181, 1);
     --border-radius: 1vw;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,8 +26,21 @@ body{
     background-color: var(--bg-color);
 }
 
-.user{
-    margin-top: 10vh;
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+
+    .material-symbols-outlined {
+        font-size: 8vw;
+        cursor: pointer;
+        color: var(--text-color);
+        margin: 3vw;
+    }
+}
+
+.user {
+    /* margin-top: 2vh; */
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -33,7 +48,7 @@ body{
     color: var(--text-color);
 }
 
-.atendimentos{
+.atendimentos {
     background-color: var(--primary-color);
     width: 90vw;
     display: flex;
@@ -43,7 +58,7 @@ body{
     border-radius: var(--border-radius);
     color: var(--text-color);
 
-    .placar{
+    .placar {
         margin-top: 2vw;
         display: flex;
         flex-direction: row;
@@ -51,7 +66,7 @@ body{
     }
 }
 
-.calendario{
+.calendario {
     margin-top: 7vw;
     width: 90vw;
     display: flex;
@@ -61,29 +76,37 @@ body{
     color: var(--text-color);
 }
 
-.tabela_atendimento{
+.tabela_atendimento {
     background-color: var(--primary-color);
     width: 90vw;
     border-radius: var(--border-radius);
     color: var(--text-color);
     min-height: 30vh;
 
-    table{
+    table {
         width: 100%;
         text-align: center;
         padding-top: 1vw;
 
-        th{
+        th {
             padding-bottom: 0.5vw;
         }
 
-        td{
+        td {
             cursor: pointer;
         }
     }
+
+    .ok{
+        color: var(--color-ok);
+    }
+
+    .not_ok{
+        color: var(--color-not_ok);
+    }
 }
 
-footer{
+footer {
     background-color: var(--primary-color);
     color: var(--bg-color);
     width: 100vw;
@@ -93,7 +116,7 @@ footer{
     bottom: 0;
     padding: 1vw 10vw;
 
-    .material-symbols-outlined{
+    .material-symbols-outlined {
         font-size: 8vw;
         cursor: pointer;
         color: var(--text-color);

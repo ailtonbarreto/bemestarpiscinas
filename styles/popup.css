@@ -1,7 +1,7 @@
 #popup {
     display: none;
     flex-direction: column;
-    background-color: white;
+    background-color: #000000;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
     gap: 10vh;
 
     span{
-        color: rgb(1, 209, 29);
+        color: #00975b;
         font-size: 30vh;
     }
 
@@ -24,7 +24,8 @@
         border-radius: 1vw;
         font-size: 3vh;
         padding: 1vw;
-        background-color: rgb(1, 209, 29);
+        background-color: #00975b;
+        cursor: pointer;
     }
 
 }
