@@ -8,7 +8,7 @@
 }
 
 :root{
-    --primary-color: #25BDD8;
+    --primary-color: #3784B4;
     --bg-color: #000000;
     --text-color: #ffffff;
 }
@@ -42,6 +42,10 @@ input{
     padding: 2vw;
     border-radius: 1vw;
     color: var(--text-color);
+}
+
+input::placeholder{
+    color: #beb8b8;
 }
 
 button{

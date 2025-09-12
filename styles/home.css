@@ -31,8 +31,7 @@ header {
     display: flex;
     justify-content: end;
 
-    .material-symbols-outlined {
-        font-size: 8vw;
+    h2 {
         cursor: pointer;
         color: var(--text-color);
         margin: 3vw;
