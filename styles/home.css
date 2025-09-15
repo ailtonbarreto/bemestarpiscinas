@@ -12,6 +12,7 @@
     --text-color: #ffffff;
     --color-ok: rgb(10, 231, 10);
     --color-not_ok: rgb(247, 181, 1);
+    --color-not: red;
     --border-radius: 1vw;
 }
 
@@ -31,15 +32,15 @@ header {
     display: flex;
     justify-content: end;
 
-    h2 {
+    span {
         cursor: pointer;
-        color: var(--text-color);
-        margin: 3vw;
+        color: var(--color-not);
+        margin: 5vw;
+        font-size: 8vw !important;
     }
 }
 
 .user {
-    /* margin-top: 2vh; */
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -80,7 +81,7 @@ header {
     width: 90vw;
     border-radius: var(--border-radius);
     color: var(--text-color);
-    min-height: 30vh;
+    min-height: 20vw;
 
     table {
         width: 100%;
