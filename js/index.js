@@ -1,71 +1,17 @@
-window.addEventListener("load", function () {
-    configurarFormularioLogin();
+window.addEventListener('load', () => {
+    document.getElementById("btn-entrar").addEventListener("click", function () {
+        const usuario = document.getElementById("user").value;
+        const senha = document.getElementById("password").value;
+        const erro = document.getElementById("erro");
 
-    function configurarFormularioLogin() {
-        const loginForm = document.getElementById("loginForm");
-        
-        loginForm.addEventListener("submit", async function (event) {
-            event.preventDefault();
+        const usuarioCorreto = "admin";
+        const senhaCorreta = "123";
 
-            const username = document.getElementById("input-user").value.trim();
-            const password = document.getElementById("password").value.trim();
-
-            if (!username || !password) {
-                exibirAlerta("Usuário e senha são obrigatórios!");
-                return;
-            }
-
-            await validarCredenciais(username, password);
-        });
-    }
-
-    async function obterCredenciaisJSON() {
-        try {
-            const response = await fetch("./js/credenciais.json");
-            if (!response.ok) throw new Error("Erro ao carregar arquivo de credenciais.");
-
-            const data = await response.json();
-            if (!Array.isArray(data)) throw new Error("Formato inválido do JSON.");
-
-            return data;
-        } catch (error) {
-            console.error("Erro:", error);
-            exibirAlerta("Erro ao carregar credenciais.");
-            return [];
-        }
-    }
-
-    async function validarCredenciais(username, password) {
-        const usuarios = await obterCredenciaisJSON();
-        // const user = usuarios.find(u => u.usuario === username && u.senha === password);
-        const user = usuarios.find(u => u.usuario === username && u.senha === password);
-
-
-        if (user) {
-            realizarLogin(user);
+        if (usuario === usuarioCorreto && senha === senhaCorreta) {
+            localStorage.setItem("logado", "true");
+            window.location.href = "./pages/home.html";
         } else {
-            exibirAlerta("Usuário ou senha incorretos!");
+            erro.textContent = "Usuário ou senha inválidos!";
         }
-    }
-
-    // function exibirAlerta(mensagem) {
-    //     const alert = document.getElementById("alert");
-    //     alert.innerText = mensagem;
-    //     alert.style.display = "block";
-    // }
-
-    function realizarLogin(userData) {
-        sessionStorage.setItem("logon", "1");
-        sessionStorage.setItem("currentUser", userData.apelido);
-        sessionStorage.setItem("name", userData.usuario);
-        // sessionStorage.setItem("img",userData.img)
-
-        atualizarInterface(userData);
-    }
-
-    function atualizarInterface(userData) {
-        const iframe = document.getElementById("iframe");
-        iframe.src = userData.link;
-        document.getElementById("container-login").classList.add("desapear");
-    }
+    });
 });
