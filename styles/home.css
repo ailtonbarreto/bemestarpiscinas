@@ -30,11 +30,29 @@ body {
 header {
     width: 100vw;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
 
-    span {
+    #off {
         cursor: pointer;
         color: var(--color-not);
+        margin: 5vw;
+        font-size: 8vw !important;
+    }
+
+    #notification_on {
+        /* display: none; */
+
+        cursor: pointer;
+        color: var(--primary-color);
+        margin: 5vw;
+        font-size: 8vw !important;
+    }
+
+    #notification_off {
+        display: none;
+
+        cursor: pointer;
+        color: var(--primary-color);
         margin: 5vw;
         font-size: 8vw !important;
     }
@@ -97,11 +115,11 @@ header {
         }
     }
 
-    .ok{
+    .ok {
         color: var(--color-ok);
     }
 
-    .not_ok{
+    .not_ok {
         color: var(--color-not_ok);
     }
 }
