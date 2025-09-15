@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
         const senha = document.getElementById("password").value;
         const erro = document.getElementById("erro");
 
-        const usuarioCorreto = "admin";
+        const usuarioCorreto = "usuario1";
         const senhaCorreta = "123";
 
         if (usuario === usuarioCorreto && senha === senhaCorreta) {
