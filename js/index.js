@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
         }
     });
 
-    console.log("js carregado com sucesso!")
+    console.log("js carregado com sucesso!");
 
 
 });
