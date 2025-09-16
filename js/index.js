@@ -17,4 +17,9 @@ window.addEventListener('load', () => {
             erro.textContent = "Usuário ou senha inválidos!";
         }
     });
+
+    console.log("js carregado com sucesso!")
+
+
 });
+
