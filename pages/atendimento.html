@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atendimento</title>
     <link rel="stylesheet" href="../styles/atendimento.css">
-    <link rel="stylesheet" href="../styles/popup.css">
+    <link rel="stylesheet" href="../styles/popup-ok.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
 
@@ -14,7 +14,7 @@
 
     function Show_popup() {
 
-        let popup = document.getElementById('popup');
+        let popup = document.getElementById('popup-ok');
 
         popup.style.display = 'flex';
 
@@ -22,7 +22,7 @@
 
     function Hide_popup() {
 
-        let popup = document.getElementById('popup');
+        let popup = document.getElementById('popup-ok');
 
         window.location.href = 'home.html';
 
@@ -32,7 +32,7 @@
 
 <body>
 
-    <div id="popup">
+    <div id="popup-ok">
 
         <span class="material-symbols-outlined">check</span>
 
@@ -51,7 +51,6 @@
 
         <select id="ph">
 
-            <!-- <option value="0">Selecione</option> -->
             <option value="6.8">6.8</option>
             <option value="7.0">7.0</option>
             <option value="7.2">7.2</option>
