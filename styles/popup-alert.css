@@ -14,4 +14,18 @@
     align-items: center;
     color: #ffffff;
 
+    table {
+        width: 100%;
+        text-align: center;
+        padding-top: 1vw;
+
+        th {
+            padding-bottom: 0.5vw;
+        }
+
+        td {
+            cursor: pointer;
+        }
+    }
+
 }
