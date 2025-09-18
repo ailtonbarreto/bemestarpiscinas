@@ -26,6 +26,7 @@ body {
     align-items: center;
     font-family: 'poppins', sans-serif;
     gap: 5vw;
+    margin-bottom: 20vw;
 }
 
 h1,
@@ -125,7 +126,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    bottom: 0;
     margin-top: auto;
     padding: 1vw 10vw;
 
