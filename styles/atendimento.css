@@ -18,7 +18,7 @@
 
 body {
     background-color: var(--bg-color);
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,6 @@ body {
     align-items: center;
     font-family: 'poppins', sans-serif;
     gap: 5vw;
-    padding-bottom: 550vw;
 }
 
 h1,
@@ -123,11 +122,11 @@ input[type="file"]::file-selector-button:hover {
 footer {
     background-color: var(--primary-color);
     color: var(--bg-color);
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    margin-top: auto;
     padding: 1vw 10vw;
 
     .material-symbols-outlined {

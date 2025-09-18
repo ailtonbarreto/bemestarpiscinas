@@ -17,14 +17,14 @@
 }
 
 body {
-    height: 100vh;
+    background-color: var(--bg-color);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     font-family: 'poppins', sans-serif;
     gap: 5vw;
-    background-color: var(--bg-color);
 }
 
 header {
@@ -127,11 +127,11 @@ header {
 footer {
     background-color: var(--primary-color);
     color: var(--bg-color);
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    margin-top: auto;
     padding: 1vw 10vw;
 
     .material-symbols-outlined {
