@@ -59,3 +59,27 @@ button{
     font-weight: bold;
     cursor: pointer;
 }
+
+@media (min-width: 700px) {
+
+
+    .container{
+        width: 20vw;
+    }
+
+    img{
+        width: 15vw;
+    }
+
+    input{
+        padding: 0.8vw;
+        border-radius: 0.5vw;
+    }
+
+    button{
+        margin: 0;
+        padding: 0.8vw;
+    }
+
+
+}

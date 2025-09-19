@@ -140,3 +140,11 @@ footer {
         color: var(--text-color);
     }
 }
+
+@media (min-width: 700px) {
+
+    body {
+        padding: 0 20vw;
+    }
+
+}
