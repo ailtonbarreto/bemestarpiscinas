@@ -32,7 +32,7 @@ img{
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 2vh;
+    gap: 1vw;
     width: 80vw;
 }
 
@@ -54,7 +54,6 @@ button{
     color: var(--text-color);
     border: none;
     padding: 2vw;
-    margin-top: 2vw;
     border-radius: 1vw;
     font-weight: bold;
     cursor: pointer;
@@ -79,6 +78,7 @@ button{
     button{
         margin: 0;
         padding: 0.8vw;
+        border-radius: 0.5vw;
     }
 
 
