@@ -25,15 +25,6 @@ window.addEventListener('load', () => {
 
 // window.addEventListener("DOMContentLoaded", function () {
 
-//     if (localStorage.getItem("logon") === "1") {
-//         document.getElementById("container-login").classList.add("desapear");
-//         document.getElementById("logged-message").innerHTML = localStorage.getItem("user_name") || "Usuário";
-
-//         const userData = JSON.parse(localStorage.getItem("user_data") || "{}");
-//         if (userData.user) {
-//             atualizarInterface(userData);
-//         }
-//     }
 
 //     // --------------------------------------------------------------
 
