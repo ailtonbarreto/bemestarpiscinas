@@ -20,7 +20,6 @@ window.addEventListener('load', () => {
 
     console.log("js carregado com sucesso!");
 
-
 });
 
 
