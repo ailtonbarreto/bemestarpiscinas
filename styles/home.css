@@ -141,11 +141,11 @@ footer {
     }
 }
 
-@media (min-width: 700px) {
+@media screen and (max-width: 968px),
+screen and (orientation: portrait) {
 
     body {
         padding: 0 20vw;
     }
 
 }
-

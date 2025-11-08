@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
         const senha = document.getElementById("password").value;
         const erro = document.getElementById("erro");
 
-        // limpa mensagem anterior
+    
         erro.textContent = "";
 
         try {
@@ -27,12 +27,12 @@ window.addEventListener('load', () => {
 
             const data = await response.json();
 
-            // guarda dados do usuário logado
+      
             localStorage.setItem("logado", "true");
             localStorage.setItem("user", data.id);
             localStorage.setItem("nome", data.nome);
 
-            // redireciona para a home
+       
             window.location.href = "./pages/home.html";
 
         } catch (err) {
