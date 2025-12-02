@@ -127,7 +127,7 @@ header {
 footer {
     background-color: var(--primary-color);
     color: var(--bg-color);
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     position: relative;
