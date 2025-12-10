@@ -7,147 +7,96 @@
     <link rel="stylesheet" href="../styles/home.css">
     <link rel="stylesheet" href="../styles/popup-alert.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
-    <title>home</title>
+    <title>Home</title>
 </head>
 
 <body>
 
-
+    <!-- HEADER -->
     <header>
-
-
         <span class="material-symbols-outlined" id="notification_off">notifications</span>
-
         <span class="material-symbols-outlined" id="notification_on">notifications_unread</span>
 
-        
         <span class="material-symbols-outlined" id="off"
             onclick="window.location.href='../index.html'">power_settings_new</span>
-            
     </header>
 
+    <!-- POPUP NOTIFICAÇÕES -->
     <div id="popup-alert">
-
-        
         <table>
             <tr>
-
                 <th>NOTIFICAÇÃO</th>
                 <th>AÇÃO</th>
-
             </tr>
 
             <tr>
-
-                <td >Notificação tal</td>
+                <td>Notificação tal</td>
                 <td><span class="material-symbols-outlined ok">check_circle</span></td>
-
             </tr>
-
-
         </table>
-
     </div>
 
+    <!-- USER INFO -->
     <div class="user">
-
         <img src="../img/user-foto.png" id="user_img">
-
         <h3>Funcionario A</h3>
-
     </div>
 
+    <!-- PLACAR -->
     <div class="atendimentos">
-
         <h3>Atendimentos</h3>
 
         <div class="placar">
-
             <div>
-
                 <h4>Agendados</h4>
-
-                <h4>6</h4>
-
+                <h4 id="qtd-agendados">0</h4>
             </div>
 
             <div>
-
                 <h4>Realizados</h4>
-
-                <h4>2</h4>
-
+                <h4 id="qtd-realizados">0</h4>
             </div>
-
         </div>
-
     </div>
 
+    <!-- CALENDARIO -->
     <div class="calendario">
 
         <div id="left_arrow">
-
             <span class="material-symbols-outlined">arrow_back_ios</span>
-
         </div>
 
-        <h4>Seg - 11/08/2025</h4>
+        <h4 id="data-atual">Seg - 11/08/2025</h4>
 
         <div id="right_arrow">
-
             <span class="material-symbols-outlined">arrow_forward_ios</span>
-
         </div>
 
     </div>
 
+    <!-- TABELA DE ATENDIMENTOS -->
     <div class="tabela_atendimento">
-
-        <table>
+        <table id="tabela-atendimentos">
             <tr>
                 <th>CLIENTE</th>
                 <th>SERVIÇO</th>
                 <th>AÇÃO</th>
             </tr>
-            <tr>
-                <td onclick="window.location.href='atendimento.html'">Cliente A</td>
-                <td onclick="window.location.href='atendimento.html'">Limpeza</td>
-                <td onclick="window.location.href='atendimento.html'"><span
-                        class="material-symbols-outlined ok">check_circle</span></td>
-            </tr>
 
-            <tr>
-                <td>Cliente B</td>
-                <td>Limpeza</td>
-                <td><span class="material-symbols-outlined ok">check_circle</span></td>
-            </tr>
-
-            <tr>
-                <td>Cliente C</td>
-                <td>Limpeza</td>
-                <td><span class="material-symbols-outlined not_ok">circle</span></td>
-            </tr>
-
-            <tr>
-                <td>Cliente D</td>
-                <td>Limpeza</td>
-                <td><span class="material-symbols-outlined not_ok">circle</span></td>
-            </tr>
-
+            <!-- JS vai preencher aqui -->
+            <tbody id="lista-atendimentos"></tbody>
         </table>
-
     </div>
 
+    <!-- FOOTER -->
     <footer>
-
         <span class="material-symbols-outlined">home</span>
-
         <span class="material-symbols-outlined">person</span>
-
         <span class="material-symbols-outlined" onclick="window.location.href='./config.html'">settings</span>
-
-
     </footer>
+
+    <!-- JS externo -->
+    <script src="../js/home.js"></script>
 
 </body>
 
