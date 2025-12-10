@@ -32,7 +32,7 @@ img{
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: 1vw;
+    gap: 3vw;
     width: 80vw;
 }
 
@@ -53,6 +53,7 @@ button{
     background-color: var(--primary-color);
     color: var(--text-color);
     border: none;
+    margin-top: 2vw;
     padding: 2vw;
     border-radius: 1vw;
     font-weight: bold;
