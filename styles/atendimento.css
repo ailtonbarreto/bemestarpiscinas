@@ -56,7 +56,7 @@ h3 {
         border-radius: 1vw;
         font-size: 4vw;
 
-        option{
+        option {
             border: none;
             font-size: 4vw;
         }
@@ -64,21 +64,21 @@ h3 {
 
 }
 
-.concluir{
+.concluir {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 3vw;
 }
 
-.observacao{
+.observacao {
     min-height: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
 
-    input{
+    input {
         border: none;
         width: 95%;
         position: relative;
@@ -91,16 +91,41 @@ h3 {
     }
 }
 
-#btn_concluir{
-    background-color: var(--btn-concluir);
-    color: var(--text-color);
-    font-size: 4vw;
-    width: 90vw;
-    border: none;
-    padding: 2vw ;
-    border-radius: 1vw;
-    cursor: pointer;
+.btns {
+
+    button {
+        background-color: var(--btn-concluir);
+        color: var(--text-color);
+        font-size: 3vw;
+        width: 50vw;
+        border: none;
+        padding: 2vw;
+        border-radius: 1vw;
+        cursor: pointer;
+    }
+
 }
+
+
+.user {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3vw;
+    align-items: center;
+    width: 90vw;
+
+    img {
+        width: 40vw;
+        height: 40vw;
+        max-width: 180px;
+        max-height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+}
+
 
 input[type="file"]::file-selector-button {
     background: var(--h2-color);
